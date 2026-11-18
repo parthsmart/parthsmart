@@ -20,8 +20,8 @@ from xml.etree import ElementTree as ET
 USERNAME = "parthsmart"
 NAME = "Parth"
 TAGLINE = "Student developer. Building useful apps and learning DSA."
-MAIN, ACCENT, HIGHLIGHT = "#2563EB", "#14B8A6", "#F59E0B"
-BG, INK, MUTED, LINE = "#F8FAFC", "#0F172A", "#475569", "#E2E8F0"
+MAIN, ACCENT, HIGHLIGHT = "#60A5FA", "#2DD4BF", "#FBBF24"
+BG, INK, MUTED, LINE = "#161B22", "#F0F6FC", "#A7B4C4", "#30363D"
 WEBSITE = ""  # Optional personal website, not a project URL.
 PORTRAIT = ""  # Optional local .png or .jpg, embedded into the hero.
 FEATURED = [
@@ -211,7 +211,7 @@ def render(data, out):
         uri = base64.b64encode(p.read_bytes()).decode()
         hero += f'<image x="700" y="32" width="84" height="84" href="data:{mime};base64,{uri}" preserveAspectRatio="xMidYMid meet"/>'
     else:
-        hero += rect(716,34,64,64,MAIN,16)+text(748,77,"P",34,700,"#FFFFFF",'text-anchor="middle"')
+        hero += rect(716,34,64,64,MAIN,16)+text(748,77,"P",34,700,BG,'text-anchor="middle"')
     card("hero",840,238,hero,0,f"{NAME}. {TAGLINE}")
 
     graph = text(32,39,"The daily practice",24,700)
@@ -288,7 +288,7 @@ def write_readme(out, demo=False):
         (ROOT / "README.md").write_text("\n".join(rows)+"\n",encoding="utf-8")
     # Preview deliberately uses img tags, the same embedding context as GitHub.
     preview = '\n'.join(r for r in rows if r.startswith("<") or r.startswith("  <"))
-    (out / "preview.html").write_text('<!doctype html><meta charset="utf-8"><title>Parth | Profile cards</title><style>body{max-width:840px;margin:32px auto;padding:0 16px;background:#fff}img{vertical-align:top;margin-bottom:12px}p{margin:0}</style>'+preview.replace(prefix+"/", ""),encoding="utf-8")
+    (out / "preview.html").write_text('<!doctype html><meta charset="utf-8"><title>Parth | Profile cards</title><style>body{max-width:840px;margin:32px auto;padding:0 16px;background:#0d1117;color:#f0f6fc}img{vertical-align:top;margin-bottom:12px}p{margin:0}</style>'+preview.replace(prefix+"/", ""),encoding="utf-8")
 
 
 def main():

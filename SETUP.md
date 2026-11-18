@@ -1,7 +1,7 @@
 # Your animated GitHub profile
 
-This package is prepared for **parthsmart / Parth**. No remote repository was changed.
-The profile README request returned 404. You did not provide a personal website, so the proposed palette is blue `#2563EB`, teal `#14B8A6`, and amber `#F59E0B`, on a light slate background. Fonts are Lato Regular and Lato Bold.
+This package is prepared for **parthsmart / Parth**. Published at https://github.com/parthsmart.
+The profile README request returned 404. You did not provide a personal website, so the proposed palette is blue `#60A5FA`, teal `#2DD4BF`, and amber `#FBBF24`, on a dark `#161B22` background with light text. Fonts are Lato Regular and Lato Bold.
 
 Trendz-Tracker is your confirmed feature. AI Navigator and MistakeMemo are provisional picks from your public projects; their READMEs describe a learning-roadmap tool and a debugging-memory tool. I could not verify their relationship to your latest hackathons, so no event or award claims are included. The Trendz Abacus tile currently links to Trendz-Tracker; change that URL if you have a separate Abacus site.
 
